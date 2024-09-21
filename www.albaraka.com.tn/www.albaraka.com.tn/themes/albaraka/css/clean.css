@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* CSS Document */
+/* **************** MISE A NIVEAU ***************** */
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body,
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+p,
+td,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input {
+  border: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul,
+dl,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  font-size: 100%;
+  font-weight: normal;
+}
+/* **************** STYLES GENERAUX (balises) ***************** */
+a {
+  outline: none;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+}
+.strong {
+  font-weight: bold;
+}
+.em {
+  font-style: italic;
+}
+.display_block {
+  display: block;
+}
+.display_none {
+  display: none;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.display_inline {
+  display: inline;
+}
+.display_inline_block {
+  display: inline-block;
+}
+.txt_justify {
+  text-align: justify;
+}
+.underline {
+  text-decoration: underline;
+}
+a.underline:hover {
+  text-decoration: none;
+}
+a.tounderline_hover:hover {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+/* **************** CLASSES DE MISES EN PAGE ***************** */
+/* ---- alignement ---- */
+.txt-center {
+  text-align: center;
+}
+.txt-top {
+  vertical-align: top;
+}
+.txt-center_vertical {
+  vertical-align: middle;
+}
+.txt-bottom_vertical {
+  vertical-align: bottom;
+}
+.float-none {
+  float: none;
+}
+.block_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.clear {
+  clear: both;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.clear_both {
+  clear: both;
+}
+.overflow_hidden {
+  overflow: hidden;
+}
+a:focus {
+  outline: none;
+}
+.height100_pourcent {
+  height: 100%;
+}
+/* CSS Document */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: #fff;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+input {
+  outline: none;
+}
+.float_right {
+  float: right;
+}
+.float_left {
+  float: left;
+}
+.align_right {
+  text-align: right;
+}
+.align_left {
+  text-align: left;
+}
+.align_center {
+  text-align: center;
+}
+.wrapper {
+  margin: auto;
+}
+img {
+  display: block;
+}
+.ie7 .zoom {
+  zoom: 1;
+}
+img,
+object,
+embed,
+video {
+}
+.ie6 img {
+  width: 100%;
+}
+.link {
+  color: #1688ca;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+div:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+p,
+td,
+blockquote {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "FontAwesome5ProLight";
+  src: url("font/FontAwesome5ProLight.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome5ProLight";
+  src: url("font/FontAwesome5ProLight.otf") format("opentype"),
+    url("font/FontAwesome5ProLight.woff") format("woff"),
+    url("font/FontAwesome5ProLight.ttf") format("truetype"),
+    url("font/FontAwesome5ProLight.svg#FontAwesome5ProLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}

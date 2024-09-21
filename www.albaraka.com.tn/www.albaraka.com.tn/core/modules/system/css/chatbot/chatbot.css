@@ -1,0 +1,271 @@
+/* Définition des polices globales et du style du texte */
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#chatbot,
+#helper-text {
+    font-family: 'Orbitron', sans-serif;
+    /* Définition de la police de caractères */
+    font-size: 12.5px;
+    /* Définition de la taille de la police */
+    line-height: 1.5;
+    /* Définition de l'interligne */
+    letter-spacing: 1px;
+    /* Espacement entre les lettres */
+    color: #333;
+    /* Couleur du texte */
+}
+
+/* Style de l'icône du chatbot */
+#chatbot-icon {
+    position: fixed;
+    /* Position fixée par rapport à la fenêtre du navigateur */
+    bottom: 20px;
+    /* Position depuis le bas */
+    right: 20px;
+    /* Position depuis la droite */
+    z-index: 100;
+    /* Superposition de couches */
+    cursor: pointer;
+    /* Curseur de la souris comme un pointeur */
+    width: 100px;
+    /* Largeur de l'icône */
+    height: 80px;
+    /* Hauteur de l'icône */
+    animation: bounce 2s infinite;
+    /* Animation de rebondissement */
+}
+
+/* Style de la fenêtre de chat du chatbot */
+#chatbot {
+    position: fixed;
+    /* Position fixée par rapport à la fenêtre du navigateur */
+    bottom: 120px;
+    /* Position depuis le bas */
+    right: 20px;
+    /* Position depuis la droite */
+    z-index: 101;
+    /* Superposition de couches */
+    width: 300px;
+    /* Largeur de la fenêtre de chat */
+}
+
+/* Style de la zone de texte d'entrée */
+#input-box {
+    position: relative;
+    /* Position relative aux éléments environnants */
+    bottom: 0;
+    /* Position depuis le bas */
+    right: 20px;
+    /* Position depuis la droite */
+    width: 280px;
+    /* Largeur de la zone de texte */
+    height: 30px;
+    /* Hauteur de la zone de texte */
+    border-radius: 5px;
+    /* Rayon des coins arrondis */
+    border: 1px solid #ddd;
+    /* Bordure */
+    padding: 5px;
+    /* Espacement intérieur */
+}
+
+/* Indicateur de saisie (s'affiche lorsque le bot est "en train d'écrire") */
+#typing-indicator {
+    position: relative;
+    /* Position relative aux éléments environnants */
+    padding: 10px;
+    /* Espacement intérieur */
+    background: #ddd;
+    /* Couleur de fond */
+    border-radius: 10px;
+    /* Rayon des coins arrondis */
+    width: 50px;
+    /* Largeur de l'indicateur */
+    text-align: center;
+    /* Centrer le texte à l'intérieur */
+    margin: auto;
+    /* Centrer l'élément dans son conteneur */
+}
+
+/* Styles de la zone de texte d'entrée */
+#input-box::placeholder {
+    color: #fff;
+    /* Couleur du texte indicatif */
+    opacity: 0.8;
+    /* Transparence du texte indicatif */
+}
+
+/* Styles pour Internet Explorer 10-11 */
+#input-box:-ms-input-placeholder {
+    color: #fff;
+    /* Couleur du texte indicatif */
+}
+
+/* Animation de rebondissement de l'icône du chatbot */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    /* Aucune translation verticale au début et à la fin */
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    /* Translation verticale de -20px à mi-chemin */
+}
+
+/* Style de l'icône du chatbot lorsqu'il cesse de rebondir */
+#chatbot-icon.stop-bouncing {
+    -webkit-animation: none;
+    /* Arrêt de l'animation pour les navigateurs WebKit (Chrome, Safari) */
+    animation: none;
+    /* Arrêt de l'animation pour tous les navigateurs */
+}
+
+#chatbot-icon.stop-bouncing::after {
+    opacity: 0;
+}
+
+
+/* Style du texte d'aide */
+#helper-text {
+    position: absolute;
+    /* Position absolue par rapport à son conteneur parent */
+    top: -90px;
+    /* Position depuis le haut */
+    right: 30px;
+    /* Position depuis la droite */
+    width: 150px;
+    /* Largeur du texte d'aide */
+    padding: 10px;
+    /* Espacement intérieur */
+    font-size: 14px;
+    /* Taille de la police */
+    font-weight: bold;
+    /* Graisse de la police */
+    color: #000000;
+    /* Couleur du texte */
+    text-align: center;
+    /* Centrer le texte à l'intérieur */
+    background: #ffffff;
+    /* Couleur de fond */
+    border-radius: 10px;
+    /* Rayon des coins arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    /* Ombre portée */
+}
+
+/* Animation de clignotement du texte */
+@keyframes blinkText {
+    0% {
+        opacity: 0;
+    }
+
+    /* Complètement transparent au début */
+    50% {
+        opacity: 1;
+    }
+
+    /* Complètement opaque à mi-chemin */
+    100% {
+        opacity: 0;
+    }
+
+    /* Complètement transparent à la fin */
+}
+
+/* Style de l'image de l'icône du chatbot */
+#chatbot-icon img {
+    width: 100%;
+    /* Largeur totale */
+    height: auto;
+    /* Hauteur auto pour maintenir les proportions */
+}
+
+/* Style de la zone de saisie de texte pour l'utilisateur */
+.message-input {
+    position: relative;
+    /* Position relative aux éléments environnants */
+    bottom: 0;
+    /* Position depuis le bas de l'élément parent */
+    right: 15px;
+    /* Position depuis la droite de l'élément parent */
+    z-index: 102;
+    /* Niveau de superposition sur l'axe z (au-dessus des autres éléments) */
+    width: 280px;
+    /* Largeur de la zone de saisie */
+    height: 30px;
+    /* Hauteur de la zone de saisie */
+    border: 2px solid black;
+    /* Bordure solide de 2px de couleur noire */
+    border-radius: 15px;
+    /* Rayon des coins arrondis */
+    padding: 5px;
+    /* Espacement intérieur */
+    color: black;
+    /* Couleur du texte entré par l'utilisateur */
+    font-weight: bold;
+    /* Graisse du texte entré par l'utilisateur */
+}
+
+/* Styles des messages de l'utilisateur et du bot */
+.message {
+    max-width: 2000px;
+    /* Limiter la largeur des messages */
+    margin-bottom: 3px;
+    /* Marge en dessous de chaque message */
+}
+
+/* Styles spécifiques aux messages de l'utilisateur */
+.user-message {
+    background-color: white;
+    /* Couleur de fond */
+    color: #333;
+    /* Couleur du texte */
+    order: 1;
+    /* Ordre dans le flux flex */
+    align-self: flex-end;
+    /* Alignement à droite */
+    border-radius: 18px;
+    /* Rayon des coins arrondis */
+    margin-left: 10px;
+    /* Marge à gauche */
+    padding: 10px;
+    /* Espacement intérieur */
+    border: 2px solid #333;
+    /* Bordure */
+}
+
+/* Styles spécifiques aux messages du bot */
+.bot-message {
+    background-color: #ddd;
+    /* Couleur de fond */
+    color: #333;
+    /* Couleur du texte */
+    order: 2;
+    /* Ordre dans le flux flex */
+    align-self: flex-start;
+    /* Alignement à gauche */
+    border-radius: 18px;
+    /* Rayon des coins arrondis */
+    margin-right: 10px;
+    /* Marge à droite */
+    padding: 10px;
+    /* Espacement intérieur */
+    border: 2px solid #333;
+    /* Bordure */
+}
+
+/* Style du texte à l'intérieur de chaque message */
+.message-text {
+    padding: 5px;
+    /* Espacement intérieur */
+    border-radius: 5px;
+    /* Rayon des coins arrondis */
+}

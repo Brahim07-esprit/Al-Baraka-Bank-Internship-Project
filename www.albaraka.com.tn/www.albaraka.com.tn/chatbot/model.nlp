@@ -1,0 +1,1805 @@
+{
+  "settings": {
+    "languages": [
+      "fr"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "fr"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "fr": {
+        "settings": {
+          "locale": "fr",
+          "trainByDomain": false,
+          "tag": "domain-manager-fr",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "ca,comment,va": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "comment,vas-tu": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "ca,va": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "bien,tout,va": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "comment,sens-tu,te": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "comment,sen,te,tu": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "comment,port,te,tu": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "de,neuf,quoi": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "ca,comment,pass,se": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "as,form,la,t": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "comment,journe,ta,va": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "bien,cot,de,ton,tout,va": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "bon,journe,pass,tu,une": {
+            "intent": "mood",
+            "domain": "default"
+          },
+          "aurevoir,beaucoup,merc": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "aurevoir": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "a,chequ,compt,docu,fourn,le,ouvr,pour,quel,sont,un": {
+            "intent": "creationCompteCheque",
+            "domain": "default"
+          },
+          "bonjour": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "ca,comment,salut,va": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "coucou": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "bonjour,c,est,moi": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "salut": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "yo": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "bot,hello": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "la-b,salut": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "est,nom,quel,salut,ton": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "he,ho": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "c,de,est,plais,salut,te,un,voir": {
+            "intent": "salutation",
+            "domain": "default"
+          },
+          "peux-tu,present,te": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "est,identit,quel,ton": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "es-tu,qui": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "dir,e,me,pourrais-tu,qui,tu": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "appel,comment,devrais-j,t": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "est,nom,quel,ton": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "dis-moi,peu,plus,sur,toi,un": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "en,je,plus,savoir,sur,toi,veux": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "e,explique-moi,qui,tu": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "cet,derrier,ecran,est,quelqu,un": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "es-tu,ici,pourquoi": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "d,ou,viens-tu": {
+            "intent": "whomi",
+            "domain": "default"
+          },
+          "decrir,peux-tu,te": {
+            "intent": "whomi",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "mood": "default",
+          "goodbye": "default",
+          "creationCompteCheque": "default",
+          "salutation": "default",
+          "whomi": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Comment ça va ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Comment vas-tu ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ça va ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tout va bien ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Comment te sens-tu ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tu te sens comment ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Comment tu te portes ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quoi de neuf ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Comment ça se passe ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "T'as la forme ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Comment va ta journée ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tout va bien de ton côté ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tu passes une bonne journée ?",
+            "intent": "mood"
+          },
+          {
+            "domain": "default",
+            "utterance": "Merci beaucoup! aurevoir",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "aurevoir",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quels sont les documents à fournir pour ouvrir un compte chèque ?",
+            "intent": "creationCompteCheque"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bonjour!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Salut, comment ça va?",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hey!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Coucou",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bonjour, c'est moi",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Salutations",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Yo!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello, bot!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Salut",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Salut là-bas!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Salut, quel est ton nom?",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hé ho!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Salut, c'est un plaisir de te voir!",
+            "intent": "salutation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Peux-tu te présenter ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quelle est ton identité ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qui es-tu ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pourrais-tu me dire qui tu es ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Comment devrais-je t'appeler ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quel est ton nom ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dis-moi un peu plus sur toi.",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Je veux en savoir plus sur toi.",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Explique-moi qui tu es.",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quelqu'un est derrière cet écran ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pourquoi es-tu ici ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "D'où viens-tu ?",
+            "intent": "whomi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Peux-tu te décrire ?",
+            "intent": "whomi"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "fr",
+              "tag": "nlu-fr",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "comment": 1,
+              "ca": 1,
+              "va": 1,
+              "vas-tu": 1,
+              "tout": 1,
+              "bien": 1,
+              "te": 1,
+              "sens-tu": 1,
+              "tu": 1,
+              "sen": 1,
+              "port": 1,
+              "quoi": 1,
+              "de": 1,
+              "neuf": 1,
+              "se": 1,
+              "pass": 1,
+              "t": 1,
+              "as": 1,
+              "la": 1,
+              "form": 1,
+              "ta": 1,
+              "journe": 1,
+              "ton": 1,
+              "cot": 1,
+              "une": 1,
+              "bon": 1,
+              "merc": 1,
+              "beaucoup": 1,
+              "aurevoir": 1,
+              "bye": 1,
+              "quel": 1,
+              "sont": 1,
+              "le": 1,
+              "docu": 1,
+              "a": 1,
+              "fourn": 1,
+              "pour": 1,
+              "ouvr": 1,
+              "un": 1,
+              "compt": 1,
+              "chequ": 1,
+              "bonjour": 1,
+              "salut": 1,
+              "hey": 1,
+              "coucou": 1,
+              "c": 1,
+              "est": 1,
+              "moi": 1,
+              "yo": 1,
+              "hello": 1,
+              "bot": 1,
+              "la-b": 1,
+              "nom": 1,
+              "he": 1,
+              "ho": 1,
+              "plais": 1,
+              "voir": 1,
+              "peux-tu": 1,
+              "present": 1,
+              "identit": 1,
+              "qui": 1,
+              "es-tu": 1,
+              "pourrais-tu": 1,
+              "me": 1,
+              "dir": 1,
+              "e": 1,
+              "devrais-j": 1,
+              "appel": 1,
+              "dis-moi": 1,
+              "peu": 1,
+              "plus": 1,
+              "sur": 1,
+              "toi": 1,
+              "je": 1,
+              "veux": 1,
+              "en": 1,
+              "savoir": 1,
+              "explique-moi": 1,
+              "quelqu": 1,
+              "derrier": 1,
+              "cet": 1,
+              "ecran": 1,
+              "pourquoi": 1,
+              "ici": 1,
+              "d": 1,
+              "ou": 1,
+              "viens-tu": 1,
+              "decrir": 1
+            },
+            "intents": {
+              "mood": 1,
+              "goodbye": 1,
+              "creationCompteCheque": 1,
+              "salutation": 1,
+              "whomi": 1
+            },
+            "intentFeatures": {
+              "mood": {
+                "comment": 1,
+                "ca": 1,
+                "va": 1,
+                "vas-tu": 1,
+                "tout": 1,
+                "bien": 1,
+                "te": 1,
+                "sens-tu": 1,
+                "tu": 1,
+                "sen": 1,
+                "port": 1,
+                "quoi": 1,
+                "de": 1,
+                "neuf": 1,
+                "se": 1,
+                "pass": 1,
+                "t": 1,
+                "as": 1,
+                "la": 1,
+                "form": 1,
+                "ta": 1,
+                "journe": 1,
+                "ton": 1,
+                "cot": 1,
+                "une": 1,
+                "bon": 1
+              },
+              "goodbye": {
+                "merc": 1,
+                "beaucoup": 1,
+                "aurevoir": 1,
+                "bye": 1
+              },
+              "creationCompteCheque": {
+                "quel": 1,
+                "sont": 1,
+                "le": 1,
+                "docu": 1,
+                "a": 1,
+                "fourn": 1,
+                "pour": 1,
+                "ouvr": 1,
+                "un": 1,
+                "compt": 1,
+                "chequ": 1
+              },
+              "salutation": {
+                "bonjour": 1,
+                "salut": 1,
+                "comment": 1,
+                "ca": 1,
+                "va": 1,
+                "hey": 1,
+                "coucou": 1,
+                "c": 1,
+                "est": 1,
+                "moi": 1,
+                "yo": 1,
+                "hello": 1,
+                "bot": 1,
+                "la-b": 1,
+                "quel": 1,
+                "ton": 1,
+                "nom": 1,
+                "he": 1,
+                "ho": 1,
+                "un": 1,
+                "plais": 1,
+                "de": 1,
+                "te": 1,
+                "voir": 1
+              },
+              "whomi": {
+                "peux-tu": 1,
+                "te": 1,
+                "present": 1,
+                "quel": 1,
+                "est": 1,
+                "ton": 1,
+                "identit": 1,
+                "qui": 1,
+                "es-tu": 1,
+                "pourrais-tu": 1,
+                "me": 1,
+                "dir": 1,
+                "tu": 1,
+                "e": 1,
+                "comment": 1,
+                "devrais-j": 1,
+                "t": 1,
+                "appel": 1,
+                "nom": 1,
+                "dis-moi": 1,
+                "un": 1,
+                "peu": 1,
+                "plus": 1,
+                "sur": 1,
+                "toi": 1,
+                "je": 1,
+                "veux": 1,
+                "en": 1,
+                "savoir": 1,
+                "explique-moi": 1,
+                "quelqu": 1,
+                "derrier": 1,
+                "cet": 1,
+                "ecran": 1,
+                "pourquoi": 1,
+                "ici": 1,
+                "d": 1,
+                "ou": 1,
+                "viens-tu": 1,
+                "decrir": 1
+              }
+            },
+            "featuresToIntent": {
+              "comment": [
+                "mood",
+                "salutation",
+                "whomi"
+              ],
+              "ca": [
+                "mood",
+                "salutation"
+              ],
+              "va": [
+                "mood",
+                "salutation"
+              ],
+              "vas-tu": [
+                "mood"
+              ],
+              "tout": [
+                "mood"
+              ],
+              "bien": [
+                "mood"
+              ],
+              "te": [
+                "mood",
+                "salutation",
+                "whomi"
+              ],
+              "sens-tu": [
+                "mood"
+              ],
+              "tu": [
+                "mood",
+                "whomi"
+              ],
+              "sen": [
+                "mood"
+              ],
+              "port": [
+                "mood"
+              ],
+              "quoi": [
+                "mood"
+              ],
+              "de": [
+                "mood",
+                "salutation"
+              ],
+              "neuf": [
+                "mood"
+              ],
+              "se": [
+                "mood"
+              ],
+              "pass": [
+                "mood"
+              ],
+              "t": [
+                "mood",
+                "whomi"
+              ],
+              "as": [
+                "mood"
+              ],
+              "la": [
+                "mood"
+              ],
+              "form": [
+                "mood"
+              ],
+              "ta": [
+                "mood"
+              ],
+              "journe": [
+                "mood"
+              ],
+              "ton": [
+                "mood",
+                "salutation",
+                "whomi"
+              ],
+              "cot": [
+                "mood"
+              ],
+              "une": [
+                "mood"
+              ],
+              "bon": [
+                "mood"
+              ],
+              "merc": [
+                "goodbye"
+              ],
+              "beaucoup": [
+                "goodbye"
+              ],
+              "aurevoir": [
+                "goodbye"
+              ],
+              "bye": [
+                "goodbye"
+              ],
+              "quel": [
+                "creationCompteCheque",
+                "salutation",
+                "whomi"
+              ],
+              "sont": [
+                "creationCompteCheque"
+              ],
+              "le": [
+                "creationCompteCheque"
+              ],
+              "docu": [
+                "creationCompteCheque"
+              ],
+              "a": [
+                "creationCompteCheque"
+              ],
+              "fourn": [
+                "creationCompteCheque"
+              ],
+              "pour": [
+                "creationCompteCheque"
+              ],
+              "ouvr": [
+                "creationCompteCheque"
+              ],
+              "un": [
+                "creationCompteCheque",
+                "salutation",
+                "whomi"
+              ],
+              "compt": [
+                "creationCompteCheque"
+              ],
+              "chequ": [
+                "creationCompteCheque"
+              ],
+              "bonjour": [
+                "salutation"
+              ],
+              "salut": [
+                "salutation"
+              ],
+              "hey": [
+                "salutation"
+              ],
+              "coucou": [
+                "salutation"
+              ],
+              "c": [
+                "salutation"
+              ],
+              "est": [
+                "salutation",
+                "whomi"
+              ],
+              "moi": [
+                "salutation"
+              ],
+              "yo": [
+                "salutation"
+              ],
+              "hello": [
+                "salutation"
+              ],
+              "bot": [
+                "salutation"
+              ],
+              "la-b": [
+                "salutation"
+              ],
+              "nom": [
+                "salutation",
+                "whomi"
+              ],
+              "he": [
+                "salutation"
+              ],
+              "ho": [
+                "salutation"
+              ],
+              "plais": [
+                "salutation"
+              ],
+              "voir": [
+                "salutation"
+              ],
+              "peux-tu": [
+                "whomi"
+              ],
+              "present": [
+                "whomi"
+              ],
+              "identit": [
+                "whomi"
+              ],
+              "qui": [
+                "whomi"
+              ],
+              "es-tu": [
+                "whomi"
+              ],
+              "pourrais-tu": [
+                "whomi"
+              ],
+              "me": [
+                "whomi"
+              ],
+              "dir": [
+                "whomi"
+              ],
+              "e": [
+                "whomi"
+              ],
+              "devrais-j": [
+                "whomi"
+              ],
+              "appel": [
+                "whomi"
+              ],
+              "dis-moi": [
+                "whomi"
+              ],
+              "peu": [
+                "whomi"
+              ],
+              "plus": [
+                "whomi"
+              ],
+              "sur": [
+                "whomi"
+              ],
+              "toi": [
+                "whomi"
+              ],
+              "je": [
+                "whomi"
+              ],
+              "veux": [
+                "whomi"
+              ],
+              "en": [
+                "whomi"
+              ],
+              "savoir": [
+                "whomi"
+              ],
+              "explique-moi": [
+                "whomi"
+              ],
+              "quelqu": [
+                "whomi"
+              ],
+              "derrier": [
+                "whomi"
+              ],
+              "cet": [
+                "whomi"
+              ],
+              "ecran": [
+                "whomi"
+              ],
+              "pourquoi": [
+                "whomi"
+              ],
+              "ici": [
+                "whomi"
+              ],
+              "d": [
+                "whomi"
+              ],
+              "ou": [
+                "whomi"
+              ],
+              "viens-tu": [
+                "whomi"
+              ],
+              "decrir": [
+                "whomi"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "fr",
+                "tag": "nlu-fr",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "comment",
+                "ca",
+                "va",
+                "vas-tu",
+                "tout",
+                "bien",
+                "te",
+                "sens-tu",
+                "tu",
+                "sen",
+                "port",
+                "quoi",
+                "de",
+                "neuf",
+                "se",
+                "pass",
+                "t",
+                "as",
+                "la",
+                "form",
+                "ta",
+                "journe",
+                "ton",
+                "cot",
+                "une",
+                "bon",
+                "merc",
+                "beaucoup",
+                "aurevoir",
+                "bye",
+                "quel",
+                "sont",
+                "le",
+                "docu",
+                "a",
+                "fourn",
+                "pour",
+                "ouvr",
+                "un",
+                "compt",
+                "chequ",
+                "bonjour",
+                "salut",
+                "hey",
+                "coucou",
+                "c",
+                "est",
+                "moi",
+                "yo",
+                "hello",
+                "bot",
+                "la-b",
+                "nom",
+                "he",
+                "ho",
+                "plais",
+                "voir",
+                "peux-tu",
+                "present",
+                "identit",
+                "qui",
+                "es-tu",
+                "pourrais-tu",
+                "me",
+                "dir",
+                "e",
+                "devrais-j",
+                "appel",
+                "dis-moi",
+                "peu",
+                "plus",
+                "sur",
+                "toi",
+                "je",
+                "veux",
+                "en",
+                "savoir",
+                "explique-moi",
+                "quelqu",
+                "derrier",
+                "cet",
+                "ecran",
+                "pourquoi",
+                "ici",
+                "d",
+                "ou",
+                "viens-tu",
+                "decrir"
+              ],
+              "intents": [
+                "mood",
+                "goodbye",
+                "creationCompteCheque",
+                "salutation",
+                "whomi"
+              ],
+              "perceptrons": [
+                [
+                  0.8135010004043579,
+                  4.751667499542236,
+                  6.465900897979736,
+                  10.697537422180176,
+                  2.5723700523376465,
+                  2.5723700523376465,
+                  4.949100971221924,
+                  5.794861316680908,
+                  3.4767777919769287,
+                  2.32918381690979,
+                  2.3238625526428223,
+                  4.404618740081787,
+                  2.7774834632873535,
+                  4.404618740081787,
+                  2.484285593032837,
+                  3.4914841651916504,
+                  0.35095030069351196,
+                  3.7436821460723877,
+                  3.7436821460723877,
+                  3.7436821460723877,
+                  1.6217296123504639,
+                  2.629225969314575,
+                  -1.6032594442367554,
+                  -1.2097609043121338,
+                  1.0052605867385864,
+                  1.0052605867385864,
+                  -0.7265210151672363,
+                  -0.7265210151672363,
+                  -2.6912598609924316,
+                  -2.690526247024536,
+                  -0.8009145259857178,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -1.0755037069320679,
+                  -0.3099401891231537,
+                  -0.3099401891231537,
+                  -2.6897878646850586,
+                  -15.482769012451172,
+                  -2.68904185295105,
+                  -2.6882927417755127,
+                  -0.6694616675376892,
+                  -1.2354073524475098,
+                  -0.22814993560314178,
+                  -2.6875388622283936,
+                  -1.3482160568237305,
+                  -1.3482160568237305,
+                  -0.06492277979850769,
+                  -0.1395413875579834,
+                  -1.3480538129806519,
+                  -1.3480538129806519,
+                  -0.3418596088886261,
+                  -0.3418596088886261,
+                  -5.088433742523193,
+                  -2.5453662872314453,
+                  -0.18176782131195068,
+                  -2.5197134017944336,
+                  -1.1234521865844727,
+                  -0.6078935861587524,
+                  -0.6078935861587524,
+                  -0.6078935861587524,
+                  -2.183138370513916,
+                  -3.3720386028289795,
+                  -3.3720386028289795,
+                  -0.1261385828256607,
+                  -0.1261385828256607,
+                  -0.4580306112766266,
+                  -0.4580306112766266,
+                  -0.4580306112766266,
+                  -0.3317798972129822,
+                  -0.3317798972129822,
+                  -0.3317798972129822,
+                  -0.3317798972129822,
+                  -1.4689654111862183,
+                  -0.09732986241579056,
+                  -0.09732986241579056,
+                  -0.09732986241579056,
+                  -0.09732986241579056,
+                  -0.786877453327179,
+                  -0.786877453327179,
+                  -0.898999035358429,
+                  -0.898999035358429,
+                  -0.898999035358429,
+                  -2.5412497520446777,
+                  2.700253629862044
+                ],
+                [
+                  -1.317492961883545,
+                  -0.8455050587654114,
+                  -1.2425187826156616,
+                  -0.770526647567749,
+                  -0.42276135087013245,
+                  -0.42276135087013245,
+                  -0.8848326206207275,
+                  -0.04775043949484825,
+                  -0.6650391221046448,
+                  -0.0022828932851552963,
+                  -0.00031378163839690387,
+                  -0.6833592653274536,
+                  -0.7213126420974731,
+                  -0.6833592653274536,
+                  -0.02408156916499138,
+                  -0.3757328689098358,
+                  -0.6872648596763611,
+                  -0.46692389249801636,
+                  -0.46692389249801636,
+                  -0.46692389249801636,
+                  -0.0006706713465973735,
+                  -0.34998369216918945,
+                  -0.4173067510128021,
+                  -0.008821195922791958,
+                  -0.3486422896385193,
+                  -0.3486422896385193,
+                  0.0011382476659491658,
+                  0.0011382476659491658,
+                  12.196076393127441,
+                  12.197707176208496,
+                  -0.6203764081001282,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -0.5740024447441101,
+                  -0.17053842544555664,
+                  -0.17053842544555664,
+                  -2.087996006011963,
+                  -2.0880353450775146,
+                  -2.0879874229431152,
+                  -2.0879783630371094,
+                  -0.2361733764410019,
+                  -0.8489392399787903,
+                  -0.2116956114768982,
+                  -2.087965726852417,
+                  -1.0440177917480469,
+                  -1.0440177917480469,
+                  -0.2581421136856079,
+                  -0.20142962038516998,
+                  -1.0440161228179932,
+                  -1.0440161228179932,
+                  -0.011756476946175098,
+                  -0.011756476946175098,
+                  -0.8021451830863953,
+                  -0.4010784327983856,
+                  -0.20143580436706543,
+                  -0.9596941471099854,
+                  -1.1283447742462158,
+                  -0.13475221395492554,
+                  -0.13475221395492554,
+                  -0.13475221395492554,
+                  -0.31120312213897705,
+                  -0.20345288515090942,
+                  -0.20345288515090942,
+                  -0.1667003035545349,
+                  -0.1667003035545349,
+                  -0.393551230430603,
+                  -0.393551230430603,
+                  -0.393551230430603,
+                  -0.22685033082962036,
+                  -0.22685033082962036,
+                  -0.22685033082962036,
+                  -0.22685033082962036,
+                  -0.15211863815784454,
+                  -0.16627807915210724,
+                  -0.16627807915210724,
+                  -0.16627807915210724,
+                  -0.16627807915210724,
+                  -0.47985216975212097,
+                  -0.47985216975212097,
+                  -0.6960136294364929,
+                  -0.6960136294364929,
+                  -0.6960136294364929,
+                  -0.40106579661369324,
+                  2.0880553659133687
+                ],
+                [
+                  -0.0704219788312912,
+                  -0.04355873540043831,
+                  -0.05246112495660782,
+                  -0.0019691623747348785,
+                  -0.0038757785223424435,
+                  -0.0038757785223424435,
+                  -0.1324491649866104,
+                  0,
+                  -0.03702690079808235,
+                  0,
+                  0,
+                  -0.0028742081485688686,
+                  -0.0971066877245903,
+                  -0.0028742081485688686,
+                  0,
+                  -0.005154164042323828,
+                  -0.029844891279935837,
+                  -0.00654421653598547,
+                  -0.00654421653598547,
+                  -0.00654421653598547,
+                  0,
+                  -0.005154164042323828,
+                  -0.42916277050971985,
+                  0,
+                  -0.005154164042323828,
+                  -0.005154164042323828,
+                  -0.007524595130234957,
+                  -0.007524595130234957,
+                  -0.01778659224510193,
+                  -0.009551547467708588,
+                  0.9526989459991455,
+                  1.409272313117981,
+                  1.409272313117981,
+                  1.409272313117981,
+                  1.409272313117981,
+                  1.409272313117981,
+                  1.409272313117981,
+                  1.409272313117981,
+                  0.8568910956382751,
+                  1.409272313117981,
+                  1.409272313117981,
+                  -0.08774316310882568,
+                  -0.37159043550491333,
+                  -0.0629056766629219,
+                  -0.06042441353201866,
+                  -0.1254478096961975,
+                  -0.7434040904045105,
+                  -0.020306123420596123,
+                  -0.055167850106954575,
+                  -0.04018949344754219,
+                  -0.04018949344754219,
+                  -0.014136603102087975,
+                  -0.23566585779190063,
+                  -0.042231976985931396,
+                  -0.042231976985931396,
+                  -0.08843567967414856,
+                  -0.08843567967414856,
+                  -0.0273454412817955,
+                  -0.02239913120865822,
+                  -0.14639145135879517,
+                  -0.05884052813053131,
+                  -0.03774234652519226,
+                  -0.017590491101145744,
+                  -0.017590491101145744,
+                  -0.017590491101145744,
+                  -0.02675161324441433,
+                  -0.017404478043317795,
+                  -0.017404478043317795,
+                  -0.24055248498916626,
+                  -0.24055248498916626,
+                  -0.2407495677471161,
+                  -0.2407495677471161,
+                  -0.2407495677471161,
+                  -0.00005119813431520015,
+                  -0.00005119813431520015,
+                  -0.00005119813431520015,
+                  -0.00005119813431520015,
+                  -0.004498612135648727,
+                  -0.1256563514471054,
+                  -0.1256563514471054,
+                  -0.1256563514471054,
+                  -0.1256563514471054,
+                  -0.007545034401118755,
+                  -0.007545034401118755,
+                  -0.0091453418135643,
+                  -0.0091453418135643,
+                  -0.0091453418135643,
+                  -0.001290447311475873,
+                  -0.2073265735067216
+                ],
+                [
+                  1.1526297330856323,
+                  -0.6650028228759766,
+                  -1.6998869180679321,
+                  -3.9396555423736572,
+                  -1.5418081283569336,
+                  -1.5418081283569336,
+                  -2.4034290313720703,
+                  -1.4031493663787842,
+                  -1.7500121593475342,
+                  -0.06453461945056915,
+                  -0.040868308395147324,
+                  -1.804008960723877,
+                  -0.6760905981063843,
+                  -1.804008960723877,
+                  -1.1972304582595825,
+                  -1.7091530561447144,
+                  -2.041865587234497,
+                  -0.9878873825073242,
+                  -0.9878873825073242,
+                  -0.9878873825073242,
+                  -0.6774117946624756,
+                  -1.1893340349197388,
+                  -0.8256498575210571,
+                  -0.12015088647603989,
+                  -0.5021777749061584,
+                  -0.5021777749061584,
+                  -1.0994250774383545,
+                  -1.0994250774383545,
+                  -4.400975704193115,
+                  -4.304434776306152,
+                  -0.8774527311325073,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  -0.5839318633079529,
+                  -0.22290560603141785,
+                  -0.22290560603141785,
+                  12.280817031860352,
+                  13.069324493408203,
+                  12.271705627441406,
+                  12.264772415161133,
+                  1.055273413658142,
+                  -0.6437819004058838,
+                  -0.24759675562381744,
+                  12.285344123840332,
+                  6.184284210205078,
+                  6.184284210205078,
+                  -0.6447442173957825,
+                  1.0881224870681763,
+                  6.180716514587402,
+                  6.180716514587402,
+                  1.3036693334579468,
+                  1.3036693334579468,
+                  -2.0841007232666016,
+                  -1.216565728187561,
+                  -1.7269320487976074,
+                  -2.5134849548339844,
+                  -2.7637336254119873,
+                  -0.4713468551635742,
+                  -0.4713468551635742,
+                  -0.4713468551635742,
+                  -1.000128149986267,
+                  -1.0218607187271118,
+                  -1.0218607187271118,
+                  -0.4893699288368225,
+                  -0.4893699288368225,
+                  -1.1214237213134766,
+                  -1.1214237213134766,
+                  -1.1214237213134766,
+                  -0.5024453401565552,
+                  -0.5024453401565552,
+                  -0.5024453401565552,
+                  -0.5024453401565552,
+                  -0.41789600253105164,
+                  -0.9454394578933716,
+                  -0.9454394578933716,
+                  -0.9454394578933716,
+                  -0.9454394578933716,
+                  -1.2616475820541382,
+                  -1.2616475820541382,
+                  -1.748963475227356,
+                  -1.748963475227356,
+                  -1.748963475227356,
+                  -0.8213821053504944,
+                  1.8325950845149945
+                ],
+                [
+                  -1.850589394569397,
+                  -1.5018341541290283,
+                  -2.3984081745147705,
+                  -1.1089587211608887,
+                  -0.9347158670425415,
+                  -0.9347158670425415,
+                  1.5875115394592285,
+                  -1.9008674621582031,
+                  -0.35697343945503235,
+                  -1.5809061527252197,
+                  -1.4790642261505127,
+                  -0.7799709439277649,
+                  -1.7372342348098755,
+                  -0.7799709439277649,
+                  -0.16839250922203064,
+                  -0.9723915457725525,
+                  3.3951151371002197,
+                  -1.913021206855774,
+                  -1.913021206855774,
+                  -1.913021206855774,
+                  -0.05898203328251839,
+                  -0.8421542048454285,
+                  3.5415332317352295,
+                  -0.33387109637260437,
+                  -0.7278765439987183,
+                  -0.7278765439987183,
+                  -0.7456828355789185,
+                  -0.7456828355789185,
+                  -2.2490363121032715,
+                  -2.099402666091919,
+                  2.9592251777648926,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  1.6474716663360596,
+                  -0.7531101703643799,
+                  -0.7531101703643799,
+                  -2.4692471027374268,
+                  -14.259905815124512,
+                  -2.086087226867676,
+                  -2.0830018520355225,
+                  -1.923896074295044,
+                  3.72855281829834,
+                  -1.4147734642028809,
+                  -2.081528902053833,
+                  -1.1204975843429565,
+                  -1.1204975843429565,
+                  -0.1299811750650406,
+                  1.9627517461776733,
+                  -1.0394748449325562,
+                  -1.0394748449325562,
+                  -0.45075124502182007,
+                  -0.45075124502182007,
+                  7.079301357269287,
+                  3.540041208267212,
+                  1.982102394104004,
+                  6.311921119689941,
+                  5.895190715789795,
+                  0.8932512998580933,
+                  0.8932512998580933,
+                  0.8932512998580933,
+                  3.5722038745880127,
+                  5.331185340881348,
+                  5.331185340881348,
+                  1.4343245029449463,
+                  1.4343245029449463,
+                  2.5633628368377686,
+                  2.5633628368377686,
+                  2.5633628368377686,
+                  1.1290377378463745,
+                  1.1290377378463745,
+                  1.1290377378463745,
+                  1.1290377378463745,
+                  2.678950786590576,
+                  1.707621455192566,
+                  1.707621455192566,
+                  1.707621455192566,
+                  1.707621455192566,
+                  3.155466079711914,
+                  3.155466079711914,
+                  4.068739414215088,
+                  4.068739414215088,
+                  4.068739414215088,
+                  3.539263963699341,
+                  2.079494413276246
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "fr",
+        "Comment ça va ?"
+      ],
+      [
+        "fr",
+        "Comment vas-tu ?"
+      ],
+      [
+        "fr",
+        "Ça va ?"
+      ],
+      [
+        "fr",
+        "Tout va bien ?"
+      ],
+      [
+        "fr",
+        "Comment te sens-tu ?"
+      ],
+      [
+        "fr",
+        "Tu te sens comment ?"
+      ],
+      [
+        "fr",
+        "Comment tu te portes ?"
+      ],
+      [
+        "fr",
+        "Quoi de neuf ?"
+      ],
+      [
+        "fr",
+        "Comment ça se passe ?"
+      ],
+      [
+        "fr",
+        "T'as la forme ?"
+      ],
+      [
+        "fr",
+        "Comment va ta journée ?"
+      ],
+      [
+        "fr",
+        "Tout va bien de ton côté ?"
+      ],
+      [
+        "fr",
+        "Tu passes une bonne journée ?"
+      ],
+      [
+        "fr",
+        "Merci beaucoup! aurevoir"
+      ],
+      [
+        "fr",
+        "aurevoir"
+      ],
+      [
+        "fr",
+        "bye"
+      ],
+      [
+        "fr",
+        "Quels sont les documents à fournir pour ouvrir un compte chèque ?"
+      ],
+      [
+        "fr",
+        "Bonjour!"
+      ],
+      [
+        "fr",
+        "Salut, comment ça va?"
+      ],
+      [
+        "fr",
+        "Hey!"
+      ],
+      [
+        "fr",
+        "Coucou"
+      ],
+      [
+        "fr",
+        "Bonjour, c'est moi"
+      ],
+      [
+        "fr",
+        "Salutations"
+      ],
+      [
+        "fr",
+        "Yo!"
+      ],
+      [
+        "fr",
+        "Hello, bot!"
+      ],
+      [
+        "fr",
+        "Salut"
+      ],
+      [
+        "fr",
+        "Salut là-bas!"
+      ],
+      [
+        "fr",
+        "Salut, quel est ton nom?"
+      ],
+      [
+        "fr",
+        "Hé ho!"
+      ],
+      [
+        "fr",
+        "Salut, c'est un plaisir de te voir!"
+      ],
+      [
+        "fr",
+        "Peux-tu te présenter ?"
+      ],
+      [
+        "fr",
+        "Quelle est ton identité ?"
+      ],
+      [
+        "fr",
+        "Qui es-tu ?"
+      ],
+      [
+        "fr",
+        "Pourrais-tu me dire qui tu es ?"
+      ],
+      [
+        "fr",
+        "Comment devrais-je t'appeler ?"
+      ],
+      [
+        "fr",
+        "Quel est ton nom ?"
+      ],
+      [
+        "fr",
+        "Dis-moi un peu plus sur toi."
+      ],
+      [
+        "fr",
+        "Je veux en savoir plus sur toi."
+      ],
+      [
+        "fr",
+        "Explique-moi qui tu es."
+      ],
+      [
+        "fr",
+        "Quelqu'un est derrière cet écran ?"
+      ],
+      [
+        "fr",
+        "Pourquoi es-tu ici ?"
+      ],
+      [
+        "fr",
+        "D'où viens-tu ?"
+      ],
+      [
+        "fr",
+        "Peux-tu te décrire ?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "fr": {
+        "mood": [
+          {
+            "answer": "Je vais bien, merci ! Et vous ?"
+          },
+          {
+            "answer": "Tout va bien de mon côté. Et vous ?"
+          },
+          {
+            "answer": "Comment ça va ?"
+          },
+          {
+            "answer": "Ça va bien, et vous ?"
+          },
+          {
+            "answer": "Je me porte bien, merci ! Et vous ?"
+          },
+          {
+            "answer": "Je vais très bien, merci ! Comment ça va de votre côté ?"
+          }
+        ],
+        "goodbye": [
+          {
+            "answer": "De rien, à bientôt !"
+          }
+        ],
+        "creationCompteCheque": [
+          {
+            "answer": "Pour l’ouverture de votre compte chèque vous devrez fournir les documents ci-après :\n - Copie de la pièce d’identité nationale biométrique ou le permis de conduire en cours de validité. \n - Justificatif d'adresse récent.\n - Extrait de naissance.\n - (02) deux photos d’identité."
+          }
+        ],
+        "salutation": [
+          {
+            "answer": "Bonjour, en quoi puis-je vous assister aujourd'hui ?"
+          },
+          {
+            "answer": "Salut ! Comment puis-je vous rendre service ?"
+          },
+          {
+            "answer": "Hello ! Comment puis-je vous soutenir ?"
+          },
+          {
+            "answer": "Bonjour ! Que puis-je faire pour vous aider ?"
+          },
+          {
+            "answer": "Coucou ! En quoi puis-je contribuer ?"
+          },
+          {
+            "answer": "Bonjour ! Comment puis-je vous guider ?"
+          },
+          {
+            "answer": "Salut, comment puis-je rendre votre journée meilleure ?"
+          },
+          {
+            "answer": "Hey là-bas ! Comment puis-je faciliter votre journée ?"
+          },
+          {
+            "answer": "Salut ! Comment puis-je rendre votre expérience meilleure ?"
+          },
+          {
+            "answer": "Bonjour ! Comment puis-je illuminer votre journée ?"
+          }
+        ],
+        "whomi": [
+          {
+            "answer": "Je suis le ChatBot créé par Brahim Abdelbeki pour répondre à vos questions."
+          },
+          {
+            "answer": "Je suis le résultat des efforts de Brahim Abdelbeki pour créer un chatbot utile."
+          },
+          {
+            "answer": "Je suis le chatbot développé par Brahim Abdelbeki pour interagir avec vous."
+          },
+          {
+            "answer": "Je suis la création de Brahim Abdelbeki, un chatbot au service de vos requêtes."
+          },
+          {
+            "answer": "Je suis le fruit du travail de Brahim Abdelbeki pour rendre les conversations plus faciles."
+          },
+          {
+            "answer": "Je suis le chatbot conçu par Brahim Abdelbeki pour vous fournir des réponses rapides."
+          },
+          {
+            "answer": "Je suis le résultat des compétences en développement de Brahim Abdelbeki en matière de chatbot."
+          },
+          {
+            "answer": "Je suis le chatbot que Brahim Abdelbeki a créé pour simplifier la communication."
+          },
+          {
+            "answer": "Je suis la réalisation de Brahim Abdelbeki, un chatbot destiné à vous assister."
+          },
+          {
+            "answer": "Je suis le chatbot développé avec soin par Brahim Abdelbeki pour vous aider efficacement."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
