@@ -78,7 +78,7 @@ This chatbot is fully customizable and can be implemented on any website. If you
 
 ### Acknowledgements
 
-This project was completed under the supervision of **Ridha Mejri**, IT Director at **Al Baraka Bank**, during my internship from **July to August 2023**.
+This project was completed under the supervision of **Ridha Mejri**, IT Director at **Al Baraka Bank**, during my internship from **May to September 2023**.
 
 ---
 
